@@ -1,0 +1,15 @@
+name: Lint Code Base
+
+on: pull_request
+
+jobs:
+  build:
+    name: Lint Code Base
+    runs-on: windows-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Super Lint Code Base
+        uses: github/super-linter@v4
+          
